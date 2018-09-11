@@ -4,7 +4,6 @@
 
 body
   font-family: $font-family-roboto
-  font-weight: light
   font-size: 18px
   line-height: 1.4
   color: black
@@ -21,7 +20,7 @@ h1
   font-size: 28px
 
   a
-    color: inherit
+    color: $orange
 
 h2
   font-size: 24px
@@ -45,12 +44,10 @@ small
 
 .content a,
 .container a
+  border-bottom: 2px solid $orange
   text-decoration: none
   color: black
   font-weight: $font-weight-semibold
-
-  &:hover
-    background: gold
 
 .wf-loading
   h1, h2, h3, p, a, blockquote, li, span, small
