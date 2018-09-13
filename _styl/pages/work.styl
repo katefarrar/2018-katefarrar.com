@@ -4,9 +4,56 @@
 
 .work
 
-  li
-    display: inline
-    margin-right: 5px
+  .content
+    margin: 0 auto;
+    width: 900px;
+  
+  .work-wrap
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
-  li:last-child
-    margin-right: 0
+  .work-item
+    margin: 0 10px 10px 0;
+    flex-basis: auto;
+    flex-grow: 1;
+    width: 50%;
+    flex: flex-basis;
+    margin-bottom: 25px;
+
+    h2
+      padding-right: 25px;
+
+    p
+      margin-bottom: 5px;
+
+    li
+      display: inline
+      margin-right: 5px
+      font-size: 12px;
+      
+    li:last-child
+      margin-right: 0
+    
+
+  .key
+    
+    span
+      display: inline-block
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      margin-right: 2px;
+      margin-left: 2px;
+      
+    span.red
+      background-color: red;
+      
+    span.blue
+      background-color: blue;
+      
+    span.green
+      background-color: green;
+      
+    span.orange
+      background-color: orange;
