@@ -15,9 +15,24 @@ header
     background-color: $purple;
     opacity: .5;
   
-//   h1.title
-//     font-size: 60px;
+.wrap
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  .item
+    order: 1;
+    text-align: center;
     
-//   .main-nav
-//     li
-//       font-size: 36px;
+    
+    img
+      margin: 0 auto;
+      
+    .large
+      width: 165px;
+    .med
+      width: 135px;
+    .small
+      width: 95px;
+      
