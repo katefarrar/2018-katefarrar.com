@@ -10,26 +10,44 @@ block content
 
     include includes/header
 
-    div.center
+    section.clear#intro
 
-      img.main-pic.overlay(src='/assets/images/katefarrar-2018.jpg' width='300px')
+      p Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style
 
-      h1 Hello! I'm Kate - a product designer and human living in Denver, CO.
+      h1 Hello! I'm Kate - a designer and human living in Denver, CO.
 
-      h2 I'm passionate about
+      img.main-pic.overlay(src='/assets/images/katefarrar-2018.jpg' width='225px')
 
-    .icons-wrap
+  hr
 
-      .item
-        img.icon.small(src='/assets/images/icon-bulb.svg')
-        h3 Product Design
+  .content
 
-      .item
-        img.icon.large(src='/assets/images/icon-screens.svg')
-        h3 Front End Development
+    section#info
 
-      .item
-        img.icon.med(src='/assets/images/icon-bubble.svg')
-        h3 Collaboration
+      h2.center I specialize in user-driven<br> design that focuses on these things: 
 
-    h2.center Let's get to know each other. Check out my work or read more about me.
+      .icons-wrap
+
+        .item
+          img.icon.small(src='/assets/images/icon-lightbulb.svg')
+          h3 Strategy
+
+        .item
+          img.icon.large(src='/assets/images/icon-screens.svg')
+          h3 Front End Dev
+
+        .item
+          img.icon.med(src='/assets/images/icon-bubbles.svg')
+          h3 Collaboration
+
+  hr
+
+  .content
+     
+    section 
+    
+      h2.center Let's get to know each other! <br>Check out <a href="/work">my work</a> or read more <a href="/about">about me</a>.
+
+
+    
+  include includes/footer
