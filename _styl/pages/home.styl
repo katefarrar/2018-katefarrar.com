@@ -3,26 +3,33 @@
 --------------------------------------------------------------------*/
 .content
   max-width: 860px;
-  
-header
-  padding-top: 25px;
     
 .home
   
   #intro
-    padding-top: 80px;
+    background-color: $blue
+    padding-top: 40px;
     min-height: 100vh
     height: auto;
+    text-align: center;
+    color: $white;
     
-    h1, h2
+    h2
       font-size: 60px;
+      
+      span
+        font-style: italic;
+        padding: 0 1px;
+      
+    h1
+      font-size: 45px;
 
     .main-pic
-      float: left;
       border-radius: 50%;
       margin: 0 auto;
       opacity: .85;
-      margin-bottom: 55px;
+      margin-bottom: 25px;
+      width: 200px;
     
     .overlay
       background-color: $purple;
@@ -35,7 +42,17 @@ header
     
     h2
       font-size: 40px;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
+      
+  #cta
+    background-color: $green
+    padding: 60px 0 40px;
+    text-align: center;
+    color: $white;
+    
+    a
+      color: $white;
+      border-color: $white;
   
   .icons-wrap
     display: flex;
@@ -45,8 +62,7 @@ header
     
     .item
       flex-basis: 33%;
-      text-align: center;
-      
+      text-align: center;      
       
       img
         margin: 0 auto;

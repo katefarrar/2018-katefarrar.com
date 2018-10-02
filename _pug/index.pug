@@ -10,15 +10,17 @@ block content
 
     include includes/header
 
-    section.clear#intro
-      
-      <h1 class="demo1">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h1>
+  section#intro
 
-      h1 Hello! I'm Kate - a designer and human living in Denver, CO.
+    .content.clear
 
-      h2 I use design to <br><span class="rotate">reach</span><br> people.
+      img.main-pic(src='/assets/images/katefarrar-2018.jpg')
 
-  hr
+      h1 Hello! I'm Kate - a designer and developer living in Denver, CO.
+
+      <p id="example1"></p>
+
+      <h2 class="demo1">I design to <span class="rotate">engage, reach, inform, help, impact, educate, inspire, connect</span> people.</h1>
 
   .content
 
@@ -39,15 +41,11 @@ block content
         .item
           img.icon.med(src='/assets/images/icon-bubbles.svg')
           h3 Collaboration
-
-  hr
-
-  .content
      
-    section 
+  section#cta
+
+    .content
     
-      h2.center Let's get to know each other! <br>Check out <a href="/work">my work</a><br> or read more <a href="/about">about me</a>.
-
-
+      h2 Let's get to know each other!<br>Check out <a href="/work">my work.</a>
     
   include includes/footer
