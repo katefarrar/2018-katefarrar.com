@@ -9,7 +9,7 @@
   #intro
     background-color: $blue
     padding-top: 40px;
-    min-height: 100vh
+    padding-bottom: 40px;
     height: auto;
     text-align: center;
     color: $white;
@@ -74,4 +74,16 @@
         width: 155px;
       .small
         width: 120px;
+        
+@media only screen and (max-width: 700px)
+  .home .icons-wrap
+    display: block;
+    
+    .item
+      flex-basis: 0;
+      margin-bottom: 70px;
+    
+      &:last-child
+        margin-bottom: 0;
       
+
