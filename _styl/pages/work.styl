@@ -4,122 +4,125 @@
 
 .work
   
-    .work-wrap
+  h1.title
+    padding-bottom: 0;
+  
+  .work-wrap
 
-      margin: 30px 0 0;
-      max-width: 49%;
-      float: left;
-      margin-right: 2%;
+    margin: 30px 0 0;
+    max-width: 49%;
+    float: left;
+    margin-right: 2%;
+    
+    &:nth-child(even)
+      margin-right: 0;
+    
+    .logo-wrap
       
-      &:nth-child(even)
-        margin-right: 0;
+      margin: 0 auto;
+      height: 250px;
+      max-width: 100%;
+      text-align: center;
+
+      img
+        position: relative;
+        top: 40%;
+        max-width: 75%;
       
-      .logo-wrap
-        
-        margin: 0 auto;
-        height: 250px;
-        max-width: 100%;
-        text-align: center;
+      img.bpn
+        top: 30%;
 
-        img
-          position: relative;
-          top: 40%;
-          max-width: 75%;
-        
-        img.bpn
-          top: 30%;
+    .work-info
+      border: 2px solid;
+      padding: 30px;
+      min-height: 275px;
 
-      .work-info
-        border: 2px solid;
-        padding: 30px;
-        min-height: 275px;
-
-        p.small
-          font-size: 12px;
-          padding-bottom: 5px;
-          margin-bottom: 0;
-        
-      .button-wrap
-        margin: 10px 10px 0 0;
-        
-    .light-blue
-      .logo-wrap
-        background-color: $work-light-blue;
-      .work-info
-        border-color: $work-light-blue;
-        background-color: $work-light-blue-fade;
-
-        button
-          border: 2px solid $work-light-blue;
-          
-          a
-            color: $work-light-blue;
-
-        
-    .dark-blue
-      .logo-wrap
-        background-color: $work-dark-blue;
-      .work-info
-        border-color: $work-dark-blue;
-        background-color: $work-dark-blue-fade;
-
-        button
-          border: 2px solid $work-dark-blue;
-          
-          a
-            color: $work-dark-blue;
-
-    .pink
-      .logo-wrap
-        background-color: $work-pink;
-      .work-info
-        border-color: $work-pink;
-        background-color: $work-pink-fade;
-
-        button
-          border: 2px solid $work-pink;
-          
-          a
-            color: $work-pink;
+      p.small
+        font-size: 12px;
+        padding-bottom: 5px;
+        margin-bottom: 0;
       
-    .yellow
-      .logo-wrap
-        background-color: $work-yellow;
-      .work-info
-        border-color: $work-yellow;
-        background-color: $work-yellow-fade;
-        
-        button
-          border: 2px solid $work-yellow;
-          
-          a
-            color: $work-yellow;
+    .button-wrap
+      margin: 20px 10px 0 0;
       
-    .teal
-      .logo-wrap
-        background-color: $work-teal;
-      .work-info
-        border-color: $work-teal;
-        background-color: $work-teal-fade;
+  .light-blue
+    .logo-wrap
+      background-color: $work-light-blue;
+    .work-info
+      border-color: $work-light-blue;
+      background-color: $work-light-blue-fade;
 
-        button
-          border: 2px solid $work-teal;
-          
-          a
-            color: $work-teal;
-      
-    .red
-      .logo-wrap
-        background-color: $work-red;
-      .work-info
-        border-color: $work-red;
-        background-color: $work-red-fade;
+      button
+        border: 2px solid $work-light-blue;
         
-        button
-          border: 2px solid $work-red;
-          
-          a
-            color: $work-red;
+        a
+          color: $work-light-blue;
+
+      
+  .dark-blue
+    .logo-wrap
+      background-color: $work-dark-blue;
+    .work-info
+      border-color: $work-dark-blue;
+      background-color: $work-dark-blue-fade;
+
+      button
+        border: 2px solid $work-dark-blue;
+        
+        a
+          color: $work-dark-blue;
+
+  .pink
+    .logo-wrap
+      background-color: $work-pink;
+    .work-info
+      border-color: $work-pink;
+      background-color: $work-pink-fade;
+
+      button
+        border: 2px solid $work-pink;
+        
+        a
+          color: $work-pink;
+    
+  .yellow
+    .logo-wrap
+      background-color: $work-yellow;
+    .work-info
+      border-color: $work-yellow;
+      background-color: $work-yellow-fade;
+      
+      button
+        border: 2px solid $work-yellow;
+        
+        a
+          color: $work-yellow;
+    
+  .teal
+    .logo-wrap
+      background-color: $work-teal;
+    .work-info
+      border-color: $work-teal;
+      background-color: $work-teal-fade;
+
+      button
+        border: 2px solid $work-teal;
+        
+        a
+          color: $work-teal;
+    
+  .red
+    .logo-wrap
+      background-color: $work-red;
+    .work-info
+      border-color: $work-red;
+      background-color: $work-red-fade;
+      
+      button
+        border: 2px solid $work-red;
+        
+        a
+          color: $work-red;
 
 
     @media only screen and (max-width: 800px)
@@ -133,6 +136,9 @@
         
       .work-wrap .logo-wrap img.swrtc
         top: 20%;
+        
+      .work-wrap .work-info
+        min-height: 210px;
         
     @media only screen and (max-width: 530px)
       .work-wrap .logo-wrap img.bpn
